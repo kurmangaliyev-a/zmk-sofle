@@ -63,8 +63,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-control$$
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -87,9 +87,9 @@ layers:
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
-  - END
-  - $$mdi:arrow-up-bold$$
   - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
