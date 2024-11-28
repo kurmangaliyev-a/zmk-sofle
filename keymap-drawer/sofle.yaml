@@ -16,12 +16,12 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - W
-  - Q
+  - Y
   - E
   - R
   - T
   - $$mdi:arrow-down-bold$$
-  - Y
+  - Q
   - U
   - I
   - O
