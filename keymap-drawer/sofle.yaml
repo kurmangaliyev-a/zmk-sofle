@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  LAYER0:
+  AzaMaggi:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-tab$$
   - W
   - L
@@ -27,7 +27,7 @@ layers:
   - D
   - J
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: layer1, h: toggle}
   - S
   - H
   - N
