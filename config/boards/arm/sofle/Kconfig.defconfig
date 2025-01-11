@@ -1,35 +1,23 @@
 #
-# Copyright (c) 2024 The ZMK Contributors
+# Copyright (c) 2022 Darryl deHaan
 # SPDX-License-Identifier: MIT
 #
 
-if BOARD_EYELASH_SOFLE_LEFT
+if BOARD_SOFLE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Eyelash Sofle"
+    default "Sofle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif # BOARD_EYELASH_SOFLE_LEFT
+endif # BOARD_SOFLE_LEFT
 
 
-if BOARD_EYELASH_SOFLE_LEFT || BOARD_EYELASH_SOFLE_RIGHT
+if BOARD_SOFLE_LEFT || BOARD_SOFLE_RIGHT
 
 config BOARD
-    default "eyelash_sofle"
-
-config BOARD_ENABLE_DCDC
-    bool "Enable DCDC mode"
-    select SOC_DCDC_NRF52X
-    default y
-    depends on (BOARD_EYELASH_SOFLE_LEFT || BOARD_EYELASH_SOFLE_RIGHT)
-
-config BOARD_ENABLE_DCDC_HV
-    bool "Enable High Voltage DCDC converter"
-    default y
-    select SOC_DCDC_NRF52X_HV
-    depends on (BOARD_EYELASH_SOFLE_LEFT || BOARD_EYELASH_SOFLE_RIGHT)
+    default "sofle"
 
 config ZMK_SPLIT
     default y
@@ -78,6 +66,8 @@ endchoice
 
 endif
 
+endif # BOARD_SOFLE_LEFT || BOARD_SOFLE_RIGHT
+
 if ZMK_BACKLIGHT
 
 config PWM
@@ -88,4 +78,15 @@ config LED_PWM
 
 endif # ZMK_BACKLIGHT
 
-endif # BOARD_EYELASH_SOFLE_LEFT || BOARD_EYELASH_SOFLE_RIGHT
+config BOARD_ENABLE_DCDC
+    bool "Enable DCDC mode"
+    select SOC_DCDC_NRF52X
+    default y
+    depends on (BOARD_SOFLE_LEFT || BOARD_SOFLE_RIGHT)
+
+config BOARD_ENABLE_DCDC_HV
+    bool "Enable High Voltage DCDC converter"
+    default y
+    select SOC_DCDC_NRF52X_HV
+    depends on (BOARD_SOFLE_LEFT || BOARD_SOFLE_RIGHT)
+
