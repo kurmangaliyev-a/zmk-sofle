@@ -35,10 +35,10 @@ layers:
   - {t: ',', s: <}
   - $$mdi:arrow-left-bold$$
   - {t: ., s: '>'}
-  - A
-  - E
-  - O
-  - I
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: RIGHT GUI}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
   - .
   - $$mdi:apple-keyboard-shift$$
   - F
@@ -62,8 +62,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   layer1:
   - {t: '`', s: '~'}
