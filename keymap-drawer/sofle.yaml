@@ -16,7 +16,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - W
-  - L
+  - {t: L, h: '3'}
   - {t: R, h: '2'}
   - {t: B, h: layer1}
   - Z
@@ -24,7 +24,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: Q, h: layer1}
   - {t: U, h: '2'}
-  - D
+  - {t: D, h: '3'}
   - J
   - {t: \, s: '|'}
   - {t: layer1, h: toggle}
@@ -56,8 +56,8 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - '3'
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
+  - {t: '2', s: '@', type: held}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -219,7 +219,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
-  - F12
+  - {t: F12, type: held alternate}
   - _
   - +
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,8 +251,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
