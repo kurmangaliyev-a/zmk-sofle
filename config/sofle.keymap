@@ -81,11 +81,11 @@
 
         layer_3 {
             bindings = <
-&trans     &trans        &trans         &trans        &trans        &trans          &mmv MOVE_UP     &trans  &trans  &trans      &trans     &trans      &trans
-&trans     &kp N1        &kp N2         &kp N3        &kp N4        &kp N5          &mmv MOVE_DOWN   &kp F1  &kp F2  &kp F3      &kp F4     &kp F5      &kp F11
-&trans     &trans        &trans         &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans      &trans
-&trans     &kp N6        &kp N7         &kp N8        &kp N9        &kp N0          &mmv MOVE_RIGHT  &kp F6  &kp F7  &kp F8      &kp F9    &kp F10      &kp F12
-&trans     &trans        &trans         &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans     &trans        &trans         &trans        &trans        &trans          &mmv MOVE_UP     &trans  &trans          &trans         &trans          &trans          &trans
+&trans     &kp N1        &kp N2         &kp N3        &kp N4        &kp N5          &mmv MOVE_DOWN   &kp F1  &kp F2          &kp F3         &kp F4          &kp F5          &kp F11
+&trans     &trans        &trans         &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &mmv MOVE_LEFT  &mmv MOVE_UP   &mmv MOVE_DOWN  &mmv MOVE_RIGHT &trans
+&trans     &kp N6        &kp N7         &kp N8        &kp N9        &kp N0          &mmv MOVE_RIGHT  &kp F6  &kp F7          &kp F8         &kp F9          &kp F10         &kp F12
+&trans     &trans        &trans         &trans        &trans        &trans          &mkp LCLK        &trans  &trans          &trans         &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
