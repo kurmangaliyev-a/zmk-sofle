@@ -28,10 +28,10 @@ layers:
   - J
   - {t: \, s: '|'}
   - {t: layer1, h: toggle}
-  - S
-  - H
-  - N
-  - T
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ',', s: <}
   - $$mdi:arrow-left-bold$$
   - {t: ., s: '>'}
