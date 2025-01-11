@@ -44,10 +44,10 @@
         layer0 {
             bindings = <
 &kp ESC         &kp N1              &kp N2        &kp N3          &kp N4           &kp N5       &kp UP_ARROW     &kp N6     &kp N7          &kp N8          &kp N9       &kp N0             &kp BACKSPACE
-&kp TAB         &kp W               &kp L         &lt 2 R         &lt 1 B          &kp Z        &kp DOWN_ARROW   &kp SEMI   &lt 1 Q         &lt 2 U         &kp D        &kp J              &kp BSLH
+&kp TAB         &kp W               &lt 3 L       &lt 2 R         &lt 1 B          &kp Z        &kp DOWN_ARROW   &kp SEMI   &lt 1 Q         &lt 2 U         &lt 3 D      &kp J              &kp BSLH
 &tog 1          &mt LSHIFT S        &mt LCTRL H   &mt LEFT_GUI N  &mt LEFT_ALT T   &kp COMMA    &kp LEFT_ARROW   &kp DOT    &mt RIGHT_ALT A &mt RIGHT_GUI E &mt RCTRL O  &mt RIGHT_SHIFT I  &kp APOS
 &kp LSHFT       &kp F               &kp M         &kp V           &kp C            &kp FSLH     &kp RIGHT_ARROW  &kp G      &kp P           &kp X           &kp K        &kp Y              &kp RIGHT_SHIFT
-&kp C_MUTE      &kp LCTRL           &kp LEFT_GUI  &kp LEFT_ALT    &mo 3            &kp SPACE    &kp ENTER        &kp ENTER  &kp DELETE      &mo 2           &kp RIGHT_ALT   &kp RCTRL
+&kp C_MUTE      &kp LCTRL           &kp LEFT_GUI  &mo 3           &kp DELETE       &kp SPACE    &kp ENTER        &kp ENTER  &kp DELETE      &mo 2           &kp RIGHT_ALT   &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
