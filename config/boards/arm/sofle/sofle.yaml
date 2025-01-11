@@ -1,6 +1,6 @@
-identifier: eyelash_sofle
-name: Eyelash Sofle
-url: https://github.com/a741725193/zmk-sofle
+identifier: sofle
+name: Solfe
+url: https://github.com/tokyo2006/zmk-config-sofle
 type: mcu
 arch: arm
 toolchain:
