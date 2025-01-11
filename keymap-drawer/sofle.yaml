@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  AzaMage:
+  layer0:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '2'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
