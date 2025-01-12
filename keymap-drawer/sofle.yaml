@@ -8,7 +8,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
+  - PRINTSCREEN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
