@@ -50,7 +50,7 @@
 &kp C_MUTE      &kp LCTRL           &kp LEFT_GUI  &mo 3           &kp DELETE       &kp SPACE    &kp ENTER        &kp ENTER  &kp DELETE      &mo 2           &kp RIGHT_ALT   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;и
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "AzaMage";
         };
 
