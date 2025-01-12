@@ -2,7 +2,7 @@ layout: {qmk_keyboard: sofle/rev1}
 layers:
   AzaMage:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
+  - '~'
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
@@ -93,10 +93,10 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
-  - $$mdi:bluetooth-off$$
-  - BT CLR ALL
-  - OUT BLE
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
@@ -216,11 +216,11 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - F1
-  - F2
-  - F3
-  - {t: F4, type: held alternate}
   - F5
+  - F4
+  - F3
+  - {t: F2, type: held alternate}
+  - F1
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,11 +242,11 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
-  - F8
-  - F9
   - F10
+  - F9
+  - F8
+  - F7
+  - F6
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
