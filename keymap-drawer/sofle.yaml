@@ -27,7 +27,7 @@ layers:
   - {t: D, h: '3'}
   - J
   - {t: \, s: '|'}
-  - {t: layer1, h: toggle}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, h: '$$mdi:apple-keyboard-control$$'}
   - {t: N, h: '$$mdi:apple-keyboard-command$$'}
@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '2'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
