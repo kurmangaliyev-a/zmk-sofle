@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &trans           &trans          &trans           &trans           &trans             &trans           &trans           &trans           &trans      &trans     &trans           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &trans             &trans           &kp PG_UP        &kp HOME         &kp UP      &kp END   &kp MINUS         &kp EQUAL
-&trans      &trans           &trans          &trans           &trans           &trans             &trans           &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12          &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans           &trans           &trans           &trans      &trans     &trans
+&kp GRAVE   &trans           &trans          &trans           &trans           &trans             &trans   &trans           &trans           &trans      &trans     &trans           &trans
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &trans             &trans   &kp PG_UP        &kp HOME         &kp UP      &kp END   &kp MINUS         &kp EQUAL
+&trans      &trans           &trans          &trans           &trans           &trans             &trans   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &trans   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12          &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans   &trans           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
@@ -69,11 +69,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans           &trans  &trans  &trans      &trans     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &trans           &trans  &trans  &trans      &trans     &kp UNDER    &kp PLUS
-&trans     &out OUT_TOG  &out OUT_TOG    &trans        &trans        &trans          &trans           &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &trans           &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &trans           &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans  &trans  &trans  &trans      &trans     &kp F10      &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans         &trans  &trans  &trans  &trans      &trans     &kp UNDER    &kp PLUS
+&trans     &out OUT_TOG  &out OUT_TOG    &trans        &trans        &trans         &trans  &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans         &trans  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &trans         &trans  &trans  &trans  &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -81,11 +81,11 @@
 
         layer_3 {
             bindings = <
-&none      &none         &none          &none         &none         &none           &mmv none   &none    &none    &none          &none           &none          &none
-&none      &kp N1        &kp N2         &kp N3        &kp N4        &kp N5          &mmv none   &kp N6   &kp N7   &kp N8         &kp N9          &kp N10        &none
-&none      &trans        &trans         &trans        &trans        &none           &mmv none   &none    &trans   &trans         &trans          &trans         &none
-&kp F11    &kp F1        &kp F2         &kp F3        &kp F4        &kp F5          &mmv none   &kp F6   &kp F7   &kp F8         &kp F9          &kp F10        &kp F12
-&none      &none         &none          &none         &none         &none           &mkp LCLK   &none    &none    &none          &none           &none
+&none    &none    &none    &none     &none    &none    &none       &none    &none    &none     &none   &none     &none
+&none    &kp N1   &kp N2   &kp N3    &kp N4   &kp N5   &none       &kp N6   &kp N7   &kp N8    &kp N9  &kp N10   &none
+&none    &trans   &trans   &trans    &trans   &none    &none       &none    &trans   &trans    &trans  &trans    &none
+&kp F11  &kp F1   &kp F2   &kp F3    &kp F4   &kp F5   &none       &kp F6   &kp F7   &kp F8    &kp F9  &kp F10   &kp F12
+&none    &none    &none    &none     &none    &none    &mkp LCLK   &none    &none    &none     &none   &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
