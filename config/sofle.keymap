@@ -43,11 +43,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp TILDE      &none         &none           &none            &none        &kp UP_ARROW     &kp PRINTSCREEN &none           &none           &none           &none              &none
-&kp TAB     &kp W          &lt 3 L       &lt 2 R         &lt 1 B          &kp Z        &kp DOWN_ARROW   &kp SEMI        &lt 1 Q         &lt 2 U         &lt 3 D         &kp J              &kp BSLH
-&none       &mt LSHIFT S   &mt LCTRL H   &mt LEFT_GUI N  &mt LEFT_ALT T   &kp COMMA    &kp LEFT_ARROW   &kp DOT         &mt RIGHT_ALT A &mt RIGHT_GUI E &mt RCTRL O     &mt RIGHT_SHIFT I  &kp APOS
-&none       &kp F          &kp M         &kp V           &kp C            &kp FSLH     &kp RIGHT_ARROW  &kp G           &kp P           &kp X           &kp K           &kp Y              &none
-&none       &none          &kp LCLK      &kp ENTER       &kp DELETE       &kp SPACE    &kp ENTER        &kp RCLK        &kp BACKSPACE   &kp SPACE       &none           &none
+&kp ESC     &kp TILDE      &rgb_ug RGB_OFF &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &kp PRINTSCREEN &none           &none           &none           &none              &none
+&kp TAB     &kp W          &lt 3 L         &lt 2 R         &lt 1 B          &kp Z            &kp DOWN_ARROW   &kp SEMI        &lt 1 Q         &lt 2 U         &lt 3 D         &kp J              &kp BSLH
+&none       &mt LSHIFT S   &mt LCTRL H     &mt LEFT_GUI N  &mt LEFT_ALT T   &kp COMMA        &kp LEFT_ARROW   &kp DOT         &mt RIGHT_ALT A &mt RIGHT_GUI E &mt RCTRL O     &mt RIGHT_SHIFT I  &kp APOS
+&none       &kp F          &kp M           &kp V           &kp C            &kp FSLH         &kp RIGHT_ARROW  &kp G           &kp P           &kp X           &kp K           &kp Y              &none
+&none       &none          &kp LCLK        &kp ENTER       &kp DELETE       &kp SPACE        &kp ENTER        &kp RCLK        &kp BACKSPACE   &kp SPACE       &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -59,7 +59,7 @@
 &kp GRAVE   &trans           &trans          &trans           &trans           &trans             &trans   &trans           &trans           &trans      &trans     &trans           &trans
 &trans      &trans           &mkp RCLK       &mmv MOVE_UP     &mkp LCLK        &mkp MCLK          &trans   &kp PG_UP        &kp HOME         &kp UP      &kp END    &kp MINUS        &kp EQUAL
 &trans      &trans           &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans             &trans   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &trans   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12          &trans
+&trans      &trans           &trans          &trans           &trans           &trans             &trans   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12          &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &trans   &trans           &trans           &trans      &trans     &trans
             >;
 
@@ -69,7 +69,7 @@
 
         layer_2 {
             bindings = <
-&none      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans  &trans  &trans  &trans      &trans     &kp F10      &trans
+&none      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &trans  &trans  &trans  &trans      &trans     &trans       &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans         &trans  &trans  &trans  &trans      &trans     &kp UNDER    &kp PLUS
 &trans     &out OUT_TOG  &out OUT_TOG    &trans        &trans        &trans         &trans  &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans         &trans  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
