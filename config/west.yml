@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: ziembski
+      url-base: https://github.com/Ziembski
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: urchin-peripheral-animation
-      remote: gpeye
-      revision: main 
+    - name: nice-view-press-start
+      remote: ziembski
+      revision: main
   self:
     path: config
