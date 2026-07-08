@@ -104,6 +104,14 @@
             hold-trigger-on-release;
         };
 
+        /* Exit from the Game layer: requires a TRIPLE tap so it can't happen mid-game */
+        td_game: tap_dance_game_exit {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&none>, <&none>, <&tog 4>;
+        };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -143,7 +151,7 @@
 
         layer_1 {
             bindings = <
-&trans  &bootloader   &studio_unlock  &trans          &trans           &trans          &none   &trans           &trans           &trans      &trans     &trans     &trans
+&trans  &bootloader   &studio_unlock  &trans          &trans           &trans          &none   &trans           &trans           &trans      &trans     &trans     &tog 4
 &trans  &kp GRAVE     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK       &none   &kp PG_UP        &kp HOME         &kp UP      &kp END    &kp MINUS  &kp EQUAL
 &trans  &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &none   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LBKT   &kp RBKT
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4    &none   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans     &trans
@@ -178,6 +186,22 @@
 
             sensor-bindings = <&scroll_encoder>;
             display-name = "Num";
+        };
+
+        /* Plain Windows-default layout for games: no home row mods, no layer-taps,
+           real modifiers, arrows on the nav cross. Enter: hold B + top-right corner
+           (Nav layer). Exit: TRIPLE-tap the same top-right corner. */
+        layer_4 {
+            bindings = <
+&kp ESC     &kp N1     &kp N2    &kp N3     &kp N4     &kp N5        &kp UP     &kp N6     &kp N7     &kp N8         &kp N9     &kp N0    &td_game
+&kp TAB     &kp Q      &kp W     &kp E      &kp R      &kp T         &kp DOWN   &kp Y      &kp U      &kp I          &kp O      &kp P     &kp BSLH
+&kp CAPS    &kp A      &kp S     &kp D      &kp F      &kp G         &kp LEFT   &kp H      &kp J      &kp K          &kp L      &kp SEMI  &kp APOS
+&kp LSHFT   &kp Z      &kp X     &kp C      &kp V      &kp B         &kp RIGHT  &kp N      &kp M      &kp COMMA      &kp DOT    &kp FSLH  &kp RSHFT
+&kp C_MUTE  &kp LCTRL  &kp LALT  &kp SPACE  &kp SPACE  &kp SPACE                &kp ENTER  &kp ENTER  &kp BACKSPACE  &kp SPACE  &none     &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            display-name = "Game";
         };
     };
 };
