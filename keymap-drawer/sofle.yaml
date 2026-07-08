@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofle, layout_name: sofle_layout}
+layout: {zmk_keyboard: sofle, layout_name: default_layout}
 layers:
   AzaMage:
   - $$mdi:keyboard-esc$$
