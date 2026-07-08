@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ziembski
       url-base: https://github.com/Ziembski
+    - name: mrbanh
+      url-base: https://github.com/MrBanh
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,9 @@ manifest:
       import: app/west.yml
     - name: nice-view-press-start
       remote: ziembski
+      revision: main
+    - name: nice-view-bongo-cat
+      remote: mrbanh
       revision: main
   self:
     path: config
