@@ -12,7 +12,7 @@
 / {
     /* Physical key positions (from sofle.json), required by ZMK Studio.
        Order must match the matrix transform. Units: 1/100 keyunit / centidegree. */
-    sofle_layout: sofle_layout {
+    default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Sofle";
         transform = <&default_transform>;
@@ -85,7 +85,7 @@
     };
 
     chosen {
-        zmk,physical-layout = &sofle_layout;
+        zmk,physical-layout = &default_layout;
     };
 
     behaviors {
