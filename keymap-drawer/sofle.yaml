@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofle}
+layout: {zmk_keyboard: sofle, layout_name: sofle_layout}
 layers:
   AzaMage:
   - $$mdi:keyboard-esc$$
@@ -68,7 +68,7 @@ layers:
   Nav:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
