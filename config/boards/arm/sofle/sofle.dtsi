@@ -22,7 +22,8 @@
         zephyr,display = &oled;
         zephyr,console = &cdc_acm_uart;
         zmk,underglow = &led_strip;
-        zmk,matrix-transform = &default_transform;
+        /* zmk,matrix-transform removed: the transform is referenced by the
+           zmk,physical-layout in sofle.keymap (required for ZMK Studio) */
         zmk,backlight = &backlight;
     };
 
