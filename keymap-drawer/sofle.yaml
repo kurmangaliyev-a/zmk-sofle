@@ -1,58 +1,58 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  AzaMaD:
+  AzaMage:
   - $$mdi:keyboard-esc$$
   - '~'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB OFF
+  - RGB ON
+  - RGB EFF
+  - RGB EFR
+  - RGB SPI
   - PRINTSCREEN
   - PLAY PAUSE
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-tab$$
-  - Q
-  - {t: W, h: Num}
-  - {t: E, h: Sym}
-  - {t: R, h: Nav}
-  - T
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Y
-  - {t: U, h: Nav}
-  - {t: I, h: Sym}
-  - {t: O, h: Num}
-  - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
-  - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: K, h: RIGHT GUI}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - .
-  - $$mdi:apple-keyboard-shift$$
+  - W
+  - {t: L, h: Num}
+  - {t: R, h: Sym}
+  - {t: B, h: Nav}
   - Z
-  - X
-  - C
-  - V
-  - B
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - N
-  - M
+  - $$mdi:arrow-down-bold$$
+  - {t: ;, s: ':'}
+  - {t: Q, h: Nav}
+  - {t: U, h: Sym}
+  - {t: D, h: Num}
+  - J
+  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ',', s: <}
+  - $$mdi:arrow-left-bold$$
   - {t: ., s: '>'}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: RIGHT GUI}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - .
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F
+  - M
+  - V
+  - C
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:arrow-right-bold$$
+  - G
+  - P
+  - X
+  - K
+  - Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
