@@ -4,6 +4,8 @@ include:
     shield: settings_reset
   - board: sofle_left
     shield: nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: sofle_left_nice_view
   - board: sofle_right
     shield: nice_view_adapter nice_view_custom

@@ -7,8 +7,87 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <physical_layouts.dtsi>
 
 / {
+    /* Physical key positions (from sofle.json), required by ZMK Studio.
+       Order must match the matrix transform. Units: 1/100 keyunit / centidegree. */
+    sofle_layout: sofle_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Sofle";
+        transform = <&default_transform>;
+        keys // w h x y rot rx ry
+            = <&key_physical_attrs 100 100  150   63       0     0     0>
+            , <&key_physical_attrs 100 100  250   63       0     0     0>
+            , <&key_physical_attrs 100 100  350   25       0     0     0>
+            , <&key_physical_attrs 100 100  450   12       0     0     0>
+            , <&key_physical_attrs 100 100  550   25       0     0     0>
+            , <&key_physical_attrs 100 100  650   25       0     0     0>
+            , <&key_physical_attrs 100 100  925   25       0     0     0>
+            , <&key_physical_attrs 100 100 1200   25       0     0     0>
+            , <&key_physical_attrs 100 100 1300   25       0     0     0>
+            , <&key_physical_attrs 100 100 1400   12       0     0     0>
+            , <&key_physical_attrs 100 100 1500   25       0     0     0>
+            , <&key_physical_attrs 100 100 1600   63       0     0     0>
+            , <&key_physical_attrs 100 100 1700   63       0     0     0>
+            , <&key_physical_attrs 100 100  150  163       0     0     0>
+            , <&key_physical_attrs 100 100  250  163       0     0     0>
+            , <&key_physical_attrs 100 100  350  125       0     0     0>
+            , <&key_physical_attrs 100 100  450  112       0     0     0>
+            , <&key_physical_attrs 100 100  550  125       0     0     0>
+            , <&key_physical_attrs 100 100  650  125       0     0     0>
+            , <&key_physical_attrs 100 100  925  225       0     0     0>
+            , <&key_physical_attrs 100 100 1200  125       0     0     0>
+            , <&key_physical_attrs 100 100 1300  125       0     0     0>
+            , <&key_physical_attrs 100 100 1400  112       0     0     0>
+            , <&key_physical_attrs 100 100 1500  125       0     0     0>
+            , <&key_physical_attrs 100 100 1600  163       0     0     0>
+            , <&key_physical_attrs 100 100 1700  163       0     0     0>
+            , <&key_physical_attrs 100 100  150  263       0     0     0>
+            , <&key_physical_attrs 100 100  250  263       0     0     0>
+            , <&key_physical_attrs 100 100  350  225       0     0     0>
+            , <&key_physical_attrs 100 100  450  212       0     0     0>
+            , <&key_physical_attrs 100 100  550  225       0     0     0>
+            , <&key_physical_attrs 100 100  650  225       0     0     0>
+            , <&key_physical_attrs 100 100  825  125       0     0     0>
+            , <&key_physical_attrs 100 100 1200  225       0     0     0>
+            , <&key_physical_attrs 100 100 1300  225       0     0     0>
+            , <&key_physical_attrs 100 100 1400  212       0     0     0>
+            , <&key_physical_attrs 100 100 1500  225       0     0     0>
+            , <&key_physical_attrs 100 100 1600  263       0     0     0>
+            , <&key_physical_attrs 100 100 1700  263       0     0     0>
+            , <&key_physical_attrs 100 100  150  363       0     0     0>
+            , <&key_physical_attrs 100 100  250  363       0     0     0>
+            , <&key_physical_attrs 100 100  350  325       0     0     0>
+            , <&key_physical_attrs 100 100  450  312       0     0     0>
+            , <&key_physical_attrs 100 100  550  325       0     0     0>
+            , <&key_physical_attrs 100 100  650  325       0     0     0>
+            , <&key_physical_attrs 100 100 1025  125       0     0     0>
+            , <&key_physical_attrs 100 100 1200  325       0     0     0>
+            , <&key_physical_attrs 100 100 1300  325       0     0     0>
+            , <&key_physical_attrs 100 100 1400  312       0     0     0>
+            , <&key_physical_attrs 100 100 1500  325       0     0     0>
+            , <&key_physical_attrs 100 100 1600  363       0     0     0>
+            , <&key_physical_attrs 100 100 1700  363       0     0     0>
+            , <&key_physical_attrs 100 100  800  350       0     0     0>
+            , <&key_physical_attrs 100 100  350  425       0     0     0>
+            , <&key_physical_attrs 100 100  450  412       0     0     0>
+            , <&key_physical_attrs 100 100  550  425       0     0     0>
+            , <&key_physical_attrs 100 100  700  425    3000   650   425>
+            , <&key_physical_attrs 100 100  825  375    3000   650   425>
+            , <&key_physical_attrs 100 100  925  125       0     0     0>
+            , <&key_physical_attrs 100 100 1025  375 (-3000)  1300   425>
+            , <&key_physical_attrs 100 100 1150  425 (-3000)  1300   425>
+            , <&key_physical_attrs 100 100 1300  425       0     0     0>
+            , <&key_physical_attrs 100 100 1400  412       0     0     0>
+            , <&key_physical_attrs 100 100 1500  425       0     0     0>
+            ;
+    };
+
+    chosen {
+        zmk,physical-layout = &sofle_layout;
+    };
+
     behaviors {
         mmv {
             acceleration-exponent = <1>;
@@ -49,7 +128,7 @@
 
         layer_1 {
             bindings = <
-&trans  &bootloader   &trans          &trans          &trans           &trans          &none   &trans           &trans           &trans      &trans     &trans     &trans
+&trans  &bootloader   &studio_unlock  &trans          &trans           &trans          &none   &trans           &trans           &trans      &trans     &trans     &trans
 &trans  &kp GRAVE     &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK       &none   &kp PG_UP        &kp HOME         &kp UP      &kp END    &kp MINUS  &kp EQUAL
 &trans  &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &none   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LBKT   &kp RBKT
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4    &none   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &trans     &trans
