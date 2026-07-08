@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  QWERTY:
+  AzaMaD:
   - $$mdi:keyboard-esc$$
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
