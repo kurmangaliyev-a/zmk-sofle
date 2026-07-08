@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -97,7 +97,7 @@
 
         msc {
             acceleration-exponent = <1>;
-            time-to-max-speed-ms = <400>;
+            time-to-max-speed-ms = <100>;
             delay-ms = <0>;
         };
     };
@@ -107,7 +107,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <30>;
+        tap-ms = <100>;
     };
 
     keymap {
