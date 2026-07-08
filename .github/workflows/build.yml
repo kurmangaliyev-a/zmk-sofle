@@ -7,7 +7,9 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinned: newer revisions require Zephyr with board "qualifiers" support,
+    # incompatible with the petejohanson/feat/pointers-move-scroll fork in west.yml
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@8266433d6b85cfecf57a4ba48e27e1eebb3de7b2
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
