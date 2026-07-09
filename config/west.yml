@@ -16,6 +16,6 @@ manifest:
       revision: main
     - name: zmk-nice-view-java
       remote: kurmangaliyev-a
-      revision: main
+      revision: 1f6926e50fae10a7de5e53591c3fa267974a7eec
   self:
     path: config
