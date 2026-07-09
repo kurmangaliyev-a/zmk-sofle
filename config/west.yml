@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: mrbanh
       url-base: https://github.com/MrBanh
-    - name: kurmangaliyev-a
-      url-base: https://github.com/kurmangaliyev-a
+    - name: m165437
+      url-base: https://github.com/M165437
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,8 +14,8 @@ manifest:
     - name: nice-view-bongo-cat
       remote: mrbanh
       revision: main
-    - name: zmk-nice-view-java
-      remote: kurmangaliyev-a
-      revision: 1f6926e50fae10a7de5e53591c3fa267974a7eec
+    - name: nice-view-gem
+      remote: m165437
+      revision: v0.3.0
   self:
     path: config
